@@ -1,0 +1,261 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(5, 93, 54);
+  box-sizing: border-box;
+}
+.App{
+  width: 100%;
+  position: relative;
+}
+h4 {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 3rem;
+  color: white;
+  font-family: monospace;
+  word-spacing: -18px;
+}
+.todos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+
+}
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  background: #dd2525;
+  border-radius: 15px;
+  padding: 1rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.cross{
+  position: absolute;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+.text-div{
+  width: 100%;
+}
+.text{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 450px;
+  white-space: nowrap;
+  cursor: default;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+.add-todo {
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  background: #dd2525;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.add-todo:hover{
+  transform: scale(0.8);
+}
+.add-todo svg{
+  color: white;
+  font-size: 2rem;
+}
+.modal{
+  height: 150px;
+  width: 665px;
+  background-color: #dd2525;
+  top: 120px;
+  z-index: 999;
+  position: fixed;
+  box-shadow: 0px 0px 54px darkgrey;
+  border: 2px solid white;
+}
+.cross1{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+input.input-field {
+  padding: 1rem;
+  width: 420px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+button.add-button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid white;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-weight: 700;
+  background: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.add-button:hover{
+  transform: scale(0.9);
+}
+@media (min-width:20px) and (max-width: 570px){
+
+.App{
+  width: 100%;
+  position: relative;
+}
+h4 {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 3rem;
+  color: white;
+  font-family: monospace;
+  word-spacing: -18px;
+}
+.todos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+
+}
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  background: #dd2525;
+  border-radius: 15px;
+  padding: 1rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.cross{
+  position: absolute;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+.text-div{
+  width: 100%;
+}
+.text{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 80%;
+  white-space: nowrap;
+  cursor: default;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+.add-todo {
+  position: fixed;
+  bottom: 7%;
+  right: 7%;
+  background: #dd2525;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.add-todo:hover{
+  transform: scale(0.8);
+}
+.add-todo svg{
+  color: white;
+  font-size: 2rem;
+}
+.modal{
+  height: 150px;
+  width: 75%;
+  background-color: #dd2525;
+  top: 120px;
+  z-index: 999;
+  position: fixed;
+  box-shadow: 0px 0px 54px darkgrey;
+  border: 2px solid white;
+}
+.cross1{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: white;
+}
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+input.input-field {
+  width: 58%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 15px;
+  font-size: 10px;
+}
+button.add-button {
+  width: 20%;
+  height: 30px;
+  border: 2px solid white;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-weight: 700;
+  background: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.add-button:hover{
+  transform: scale(0.9);
+}
+    
+}
